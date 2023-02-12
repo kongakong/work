@@ -85,8 +85,10 @@ print(all_holidays)
 cal = Calendar()
 for monday in mondays:
     if monday in all_holidays:
-        print("%s is a public holiday" % monday)
+        #    print("%s is a public holiday" % monday)
+        pass
     else:
+        print("%s" % monday.date())
         event = Event()
         event.add("summary", "WFH Monday")
         event.add("dtstart", monday)
